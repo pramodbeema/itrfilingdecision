@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beema's Fincon</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+			flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+			position: relative
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .heading-box {
+		    top: 50px;
+            background-color: white;
+            border: 2px solid #dc1a22;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #dc1a22;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .questions-container {
+            max-width: 1200px;
+            padding: 20px;
+            width: 100%;
+        }
+        .question {
+    margin-bottom: 15px;
+    background-color: white
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Elegant shadow effect */
+    font-weight: bold; /* Makes text easier to read */
+}
+
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px; 
+        }
+        .button-container {
+            display: flex;
+            align-items: center; 
+        }
+        button {
+            background-color: #dc1a22; 
+            color: white; 
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+        button:hover {
+            background-color: #b0161a; 
+            transform: scale(1.05); 
+        }
+        .result-box {
+            margin-left: 20px; 
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            min-width: 200px; 
+            border: 2px solid #dc1a22; 
+        }
+        .result {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .logo {
+			position: fixed; /* Ensures the logo stays fixed on the page */
+			inset: 0; /* Shorthand for top, right, bottom, and left set to 0 */
+			margin: auto; /* Centers the logo horizontally and vertically */
+			max-width: 500px; /* Maintains the logo's maximum size */
+			width: 50%;
+			height: auto;
+			opacity: 0.3; /* Set opacity to 30% */
+			z-index: -1; /* Ensures it stays behind the content */
+		}
+
+    </style>
+</head>
+<body>
+    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVvmYPTQsHa02jGcK_9tGwZZP1qSWHgcz8Ec9zkLmLckXMvMLQ=s265-w265-h265" alt="Beema's Fincon Logo" class="logo">
+    
+    <div class="heading-box">
+        <h1>Beema's Fincon</h1>
+        <h2>Know if you need to file ITR compulsorily for the AY 2025-2026 (FY 2024-2025)</h2>
+    </div>
+
+    <div class="questions-container">
+        <!-- Questions -->
+        <div class="question">
+           <label>1. 💰 Gross Total Income is exceeding ₹2,50,000/- (₹3,00,000/- for New Tax Regime) ?</label>
+           <input type="radio" name="q1" value="Yes"> Yes
+           <input type="radio" name="q1" value="No"> No
+       </div>
+	           <div class="question">
+            <label>2. 🏦 Beneficial owner of any asset (including financial interest) located outside India?</label>
+            <input type="radio" name="q2" value="Yes"> Yes
+            <input type="radio" name="q2" value="No"> No
+        </div>
+        <div class="question">
+            <label>3. ✍️ Has signing authority in any account outside India?</label>
+            <input type="radio" name="q3" value="Yes"> Yes
+            <input type="radio" name="q3" value="No"> No
+        </div>
+        <div class="question">
+            <label>4. 🎁 Beneficiary of any asset (including financial interest) located outside India?</label>
+            <input type="radio" name="q4" value="Yes"> Yes
+            <input type="radio" name="q4" value="No"> No
+        </div>
+        <div class="question">
+            <label>5. 💵 Cash deposits exceeding ₹1 Crore in one or more current accounts (in aggregate) maintained with bank or a cooperative bank?</label>
+            <input type="radio" name="q5" value="Yes"> Yes
+            <input type="radio" name="q5" value="No"> No
+        </div>
+        <div class="question">
+            <label>6. 🏦 Cash deposits of ₹50 Lakhs or more in one or more savings account?</label>
+            <input type="radio" name="q6" value="Yes"> Yes
+            <input type="radio" name="q6" value="No"> No
+        </div>
+        <div class="question">
+            <label>7. ✈️ Incurred foreign travel expenditure of an aggregate amount exceeding ₹2 Lakh for self or any other person?</label>
+            <input type="radio" name="q7" value="Yes"> Yes
+            <input type="radio" name="q7" value="No"> No
+        </div>
+        <div class="question">
+            <label>8. 💡 Incurred expenditure of an aggregate amount exceeding ₹1,00,000 towards consumption of electricity?</label>
+            <input type="radio" name="q8" value="Yes"> Yes
+            <input type="radio" name="q8" value="No"> No
+        </div>
+        <div class="question">
+            <label>9. 📈 Total sales / Total turnover / Total gross receipts as a case may be in the Business exceeds ₹60 Lakh during the previous year?</label>
+            <input type="radio" name="q9" value="Yes"> Yes
+            <input type="radio" name="q9" value="No"> No
+        </div>
+        <div class="question">
+            <label>10. 💼 Total gross receipts in Profession exceeds ₹10 Lakh during the previous year?</label>
+            <input type="radio" name="q10" value="Yes"> Yes
+            <input type="radio" name="q10" value="No"> No
+        </div>
+        <div class="question">
+            <label>11. 📝 Aggregate of TDS and TCS during the previous year is ₹25,000/- or more? (₹50,000/- for senior citizen)</label>
+            <input type="radio" name="q11" value="Yes"> Yes
+            <input type="radio" name="q11" value="No"> No
+        </div>
+       <div class="button-container">
+           <button type ="button" onclick ="checkITR()">Should I file ITR?</button>
+           <div class="result-box" id="resultBox">
+               <div class="result" id="result"></div>
+           </div>
+       </div>
+    </div>
+
+    <!-- JavaScript Functionality -->
+    <script>
+         function checkITR() {
+             let shouldFile = false;
+
+             for (let i = 1; i <=11;i++) {
+                 const radios = document.getElementsByName('q' + i);
+                 let answered = false;
+
+                 for (const radio of radios) {
+                     if (radio.checked) {
+                         if (radio.value === 'Yes') shouldFile = true;
+                         answered = true; break;
+                     }
+                 }
+
+                 if (!answered) {
+                     const resultDiv = document.getElementById('result');
+                     resultDiv.textContent = 'Please answer all the questions.';
+                     return; 
+                 }
+             }
+
+             const resultDiv = document.getElementById('result');
+             resultDiv.textContent = (shouldFile ? 'Yes, You need to file your ITR' : 'No, You don\'t need to file your ITR compulsorily');
+         }
+     </script>
+</body>
+</html>
